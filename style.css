@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: #fff;
+}
+
+
+:root{
+    --background : #000430;
+    --secondaryBackground: #272c48;
+    --text:#fff;
+    --purple:#828dff;
+    --teal: #24feee;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    margin: 120px auto 0 auto;
+    max-width: 500px;
+}
+.stats-container{
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+#numbers{
+    padding: 10px;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: var(--purple);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.progressbar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.details{
+    width: 100%;
+}
+.progress{
+    background-color: var(--teal);
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1;
+    padding: 15px;
+    background-color: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px ;
+    outline: none;
+    gap: 20px;
+    
+}
+button{
+    padding: 30px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+}
+
+/* Task Item */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondaryBackground);
+    padding: 10px;
+    width: 500px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    height: 50px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Checkbox */
+.checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Task Text */
+.task-content p {
+    font-size: 30px;
+    color:#fff;
+    margin: 0;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Icons */
+.icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.icons button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
